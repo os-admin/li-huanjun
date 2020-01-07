@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]; then
     echo "usage : recp <file list>"
-    exit 0;
+    exit 0
 fi
 
 os=`uname -s`
@@ -15,7 +15,7 @@ Darwin)
     cp="pbcopy"
     ;;
 *)
-    echo "not support"
+    echo "'$os' not support yet!"
     exit 1
     ;;
 esac
